@@ -5,11 +5,12 @@
 #include <memory>
 #include "NoteDTO.h"
 
+
 namespace note { namespace common {
 
-/*
-Abstract class allowing the View to be accessed from the Presenter
-*/
+// Abstract class allowing the View to be accessed from the Presenter
+// All needed to implement a new view would be to to implement this interface
+// TODO: Presenter must be added to constructor. View must always call those methods.
 class AbstractView
 {
 public:
