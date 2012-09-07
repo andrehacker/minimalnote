@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Form Dateien">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generierte Dateien\Debug">
+      <UniqueIdentifier>{00599070-08a0-4425-8f3e-4878ff9d6d0c}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generierte Dateien\Release">
+      <UniqueIdentifier>{58688f99-8e06-4254-96fb-621106cdcdeb}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Header Dateien">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Dateien">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Dateien">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="databaseconnection.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="globalhotkey.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="notedto.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="notesmanager.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="notesuimodel.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="notetable.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="presenter.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="settingsui.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlite3.c">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlitequery.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="sqlitetable.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tagdto.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tagsmanager.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tagsuimodel.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tagtable.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="textfilelogger.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_globalhotkey.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_globalhotkey.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_res.cpp">
+      <Filter>Generierte Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="helper.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="tageditor.cpp">
+      <Filter>Source Dateien</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_tageditor.cpp">
+      <Filter>Generierte Dateien\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="Release\moc_tageditor.cpp">
+      <Filter>Generierte Dateien\Release</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="abstractview.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="databaseconnection.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <CustomBuild Include="globalhotkey.h">
+      <Filter>Header Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Filter>Header Dateien</Filter>
+    </CustomBuild>
+    <ClInclude Include="notedto.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="notesmanager.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="notesuimodel.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="notetable.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="presenter.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="settingsui.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlite3.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlitequery.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="sqlitetable.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="tagdto.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="tagsmanager.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="tagsuimodel.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="tagtable.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="textfilelogger.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h">
+      <Filter>Generierte Dateien</Filter>
+    </ClInclude>
+    <ClInclude Include="helper.h">
+      <Filter>Header Dateien</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwindow.ui">
+      <Filter>Form Dateien</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tageditor.h">
+      <Filter>Header Dateien</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\glyphicons_023_cogwheels.png">
+      <Filter>Resource Dateien</Filter>
+    </None>
+    <None Include="res\glyphicons_027_search.png">
+      <Filter>Resource Dateien</Filter>
+    </None>
+    <None Include="res\glyphicons_027_search_14px.png">
+      <Filter>Resource Dateien</Filter>
+    </None>
+    <None Include="res\glyphicons_027_search_16px.png">
+      <Filter>Resource Dateien</Filter>
+    </None>
+    <None Include="res\glyphicons_190_circle_plus.png">
+      <Filter>Resource Dateien</Filter>
+    </None>
+    <CustomBuild Include="res.qrc">
+      <Filter>Resource Dateien</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

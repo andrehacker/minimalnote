@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/files">
+        <file>res/glyphicons_190_circle_plus.png</file>
+        <file>res/glyphicons_027_search.png</file>
+        <file>res/glyphicons_023_cogwheels.png</file>
+        <file>res/glyphicons_027_search_16px.png</file>
+        <file>res/glyphicons_027_search_14px.png</file>
+        <file>res/glyphicons_066_tags.png</file>
+        <file>res/glyphicons_066_tags_14px.png</file>
+    </qresource>
+</RCC>
