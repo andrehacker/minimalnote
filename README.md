@@ -21,7 +21,7 @@ Implementation
 --------------
 * Based on C++11, Boost, Qt and sqlite
 * Built with VS2010 (for Qt support), so some C++11 features are not available yet.
-* Based on Model View Presenter approach (Passive View). See below for more details
+* Based on Model View Presenter approach (Passive View). See below (architecture) for more details
 * Only the View is implemented in Qt, but it should be easy to replace the view by another UI framework. Other parts don't have dependencies on Qt (except Logging)
 * Uses a mall custom sqlite wrapper (could not find a simple c++11-style wrapper without heavy use of raw pointers)
 
