@@ -32,7 +32,7 @@ Implementation
 Architecture
 --------------
 This is based on a very simple implementation of Model View Presenter.
-Model has no way to access view and vice versa. The view is defined by an interface, all goes through Presenter.
+Model has no way to access View and vice versa. All goes through Presenter. The view is defined by an interface (AbstractView.h) and can be replaced easily (e.g. for testing or using another ui framework).
 See this [great comparism of MVP/MVC](http://aviadezra.blogspot.de/2007/07/twisting-mvp-triad-say-hello-to-mvpc.html) or the [even better article](http://martinfowler.com/eaaDev/uiArchs.html) from M. Fowler.
 
 
