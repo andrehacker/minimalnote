@@ -7,7 +7,8 @@ I am a heavy user of Evernote, which starts getting slower and slower. So the ma
 
 Ultranote was developed for the purpose of learning only (C++11, MVC/MVP, Qt, cross platform dev). The plan is to extend it from time to time.
 
-![Screenshot of early version of Ultranote](/misc/screenshot.png)
+![Screenshot of early version of Ultranote](https://raw.github.com/andrehacker/ultranote/master/misc/screenshot.png)
+
 
 Features
 ---------
