@@ -17,6 +17,7 @@ Features
 * **Incremental Search**: see results as soon as you start typing
 * **100% keyboard optimized** (in progress)
 * **Global hotkey** ALT-SHIFT-F resumes from Tray Icon (planned for MacOSx/Linux)
+* Platform independent: 
 * Automatic save: No need to save, will be done in background.
 * Learning Features: I plan to add learning capabilities later (missing in Evernote)
 * Links to Dropbox files are planned (Evernote attachments are slow and fat)
