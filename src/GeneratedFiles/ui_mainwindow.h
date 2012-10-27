@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Fri 7. Sep 10:01:11 2012
+** Created: Sat 27. Oct 11:50:20 2012
 **      by: Qt User Interface Compiler version 4.8.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -237,7 +237,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "QuickNote", 0, QApplication::UnicodeUTF8));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "UltraNote", 0, QApplication::UnicodeUTF8));
         actionExit->setText(QApplication::translate("MainWindow", "&Exit", 0, QApplication::UnicodeUTF8));
         actionNewNote->setText(QApplication::translate("MainWindow", "&New Note", 0, QApplication::UnicodeUTF8));
 #ifndef QT_NO_TOOLTIP
