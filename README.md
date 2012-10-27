@@ -1,11 +1,13 @@
 Ultranote
 =========
 
-Ultra-simple tag-based keyboard-optimized Note application.
+Ultra-simple tag-based keyboard-optimized note application.
 
 I am a heavy user of Evernote, which starts getting slower and slower. So the main goal is to keep it as simple as possible to create and search notes.
 
 Ultranote was developed for the purpose of learning only (C++11, MVC/MVP, Qt, cross platform dev). The plan is to extend it from time to time.
+
+You can **download** a portable version in the [release folder](https://github.com/andrehacker/ultranote/tree/master/releases)
 
 ![Screenshot of early version of Ultranote](https://raw.github.com/andrehacker/ultranote/master/misc/screenshot.png)
 
