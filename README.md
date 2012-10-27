@@ -1,4 +1,4 @@
-Ultranote
+MinimalNote (previously UltraNote)
 =========
 
 Ultra-simple tag-based keyboard-optimized note application.
