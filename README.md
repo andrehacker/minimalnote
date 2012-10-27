@@ -13,7 +13,7 @@ You can **download** a portable version in the [release folder](https://github.c
 Features
 ---------
 * Ingredients of a note: Title, tags and content
-* **Tag based organization**: In combination with fulltext search this is all you need to store all your information
+* **Tag based organization**: In combination with fulltext search this is all you need to store and organize all your information. Way better than document and folder oriented.
 * **Incremental Search**: see results as soon as you start typing
 * **100% keyboard optimized** (in progress)
 * **Global hotkey** ALT-SHIFT-F resumes from Tray Icon (planned for MacOSx/Linux)
