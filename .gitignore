@@ -15,3 +15,13 @@
 *.user
 *.suo
 *.sdf
+src/debug
+src/Release
+src/Win32
+# Intellisense, precompiled headers
+src/ipch/
+
+# Specific
+notes.db
+log.txt
+

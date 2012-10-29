@@ -92,7 +92,7 @@ void MainWindow::initTrayIcon() {
             this, SLOT(trayIconActivated(QSystemTrayIcon::ActivationReason)));
     trayIcon.setIcon(QIcon(":/files/res/glyphicons_027_search.png"));
 
-    restoreAction = std::unique_ptr<QAction> (new QAction(tr("&Open Note"), this));
+    restoreAction = std::unique_ptr<QAction> (new QAction(tr("&Open MinimalNote"), this));
     connect(restoreAction.get(), SIGNAL(triggered()), this, SLOT(showNormal()));
     quitAction = std::unique_ptr<QAction> (new QAction(tr("&Quit"), this));
     connect(quitAction.get(), SIGNAL(triggered()), qApp, SLOT(quit()));
@@ -163,7 +163,7 @@ void MainWindow::closeEvent(QCloseEvent *event)
 {
     if (trayIcon.isVisible()) {
         if (note::common::SettingsUi::minimizedInfoAllowed()) {
-            trayIcon.showMessage("QNote", "QNote will keep running in background. "
+            trayIcon.showMessage("QNote", "MinimalNote will keep running in background. "
                                  "Click here to restore it, or choose Quit"
                                  " in the context menu of the tray icon.");
         }

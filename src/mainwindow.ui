@@ -17,7 +17,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>UltraNote</string>
+   <string>MinimalNote</string>
   </property>
   <property name="windowIcon">
    <iconset>
