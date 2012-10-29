@@ -41,8 +41,8 @@ See this [great comparism of MVP/MVC](http://aviadezra.blogspot.de/2007/07/twist
 Todo
 ---------
 * Static linking deployment
-* The global hotkey is not yet platform independent
-* Unit Tests need to be added (should have done this first...)
-* Want to replace the Qt logging mechanism by something else. Didn't find a great logging library yet.
+* Make global hotkey platform independent
+* Add Unit Tests (should have done this first...)
+* Replace Qt logging mechanism by something else. Didn't find a great logging library yet.
 * There are tons of pending issues...
 
