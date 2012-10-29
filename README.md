@@ -1,9 +1,9 @@
-MinimalNote (previously UltraNote)
+MinimalNote
 =========
 
 Ultra-simple tag-based keyboard-optimized note application.
 
-MinimalNote was developed for the purpose of learning only (C++11, MVC/MVP, Qt, cross platform dev). The plan is to extend it from time to time and to replace my heavily used Evernote at any time (getting slower and slower).
+MinimalNote was developed for the purpose of learning (C++11, MVC/MVP, Qt, cross platform dev). The plan is to extend it from time to time and to replace my heavily used Evernote at any time (getting slower and slower).
 
 You can **download** a portable version in the [release folder](https://github.com/andrehacker/minimalnote/tree/master/releases)
 
