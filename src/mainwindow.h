@@ -72,6 +72,7 @@ private:
     void restoreWindowFromTray();
     void initTrayIcon();
     void selectNoteByRow(int row);
+    void focusNoteText();
     NoteDto getSelectedNote();
     void selectNextNote(bool directionDown);
 

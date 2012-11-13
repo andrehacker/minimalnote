@@ -18,6 +18,7 @@ bool NoteTable::createTable()
 {
     // Column id will be an alias for sqlites internal rowid.
     // See http://www.sqlite.org/lang_createtable.html#rowid
+    const std::string firstNoteTitle = "'Welcome to MinimalNote'";
     const std::string firstNoteText = "'Delete this note and create your own!\n" \
         "============== \n\n" \
         "How to use \n" \
@@ -28,7 +29,7 @@ bool NoteTable::createTable()
         "* On the right side, you can edit the selected note.'";
 
     db_.execDML("CREATE TABLE notes (id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, title TEXT NOT NULL, content TEXT NOT NULL, deleted INTEGER DEFAULT 0 NOT NULL, tags TEXT NOT NULL)");
-    db_.execDML("INSERT INTO notes (title, content, tags) values ('Welcome to MinimalNote', " + firstNoteText + ", ',DEV,');");
+    db_.execDML("INSERT INTO notes (title, content, tags) values (" + firstNoteTitle + ", " + firstNoteText + ", ',DEV,');");
     db_.execDML("INSERT INTO notes (title, content, tags) values ('This is a second note', 'Please delete me by pressing the DEL key', ',Personal,');");
     return true;    //TODO: separate method execDDL needed
 }

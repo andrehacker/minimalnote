@@ -146,6 +146,16 @@ bool MainWindow::eventFilter(QObject* object, QEvent* event)
             qDebug() << "Reset search to empty";
             setSearchFilter("");
         }
+        if ((object == ui_->lineSearch || object == ui_->listResult)
+            && (keyEvent->key() == Qt::Key_Return || keyEvent->key() == Qt::Key_Enter)) {
+            qDebug() << "Enter note";
+            focusNoteText();
+        }
+        if (keyEvent->key() == Qt::Key_N && keyEvent->modifiers() == Qt::ControlModifier) {
+            // TODO: Handle case where user is creating many empty new notes (should be avoided)
+            qDebug() << "Hotkey: New note";
+            presenter_.newNoteClicked();
+        }
     }
     // Standard event processing
     return QObject::eventFilter(object, event);
@@ -161,11 +171,13 @@ void MainWindow::showEvent(QShowEvent *event) {
 // overwrite
 void MainWindow::closeEvent(QCloseEvent *event)
 {
+    const QString trayTitle = "Still running...";
+    const QString trayText = "MinimalNote will keep running in background. "
+                                 "Click here to restore it, or choose Quit"
+                                 " in the context menu of the tray icon.";
     if (trayIcon.isVisible()) {
         if (note::common::SettingsUi::minimizedInfoAllowed()) {
-            trayIcon.showMessage("QNote", "MinimalNote will keep running in background. "
-                                 "Click here to restore it, or choose Quit"
-                                 " in the context menu of the tray icon.");
+            trayIcon.showMessage(trayTitle, trayText);
         }
         hide();
         event->ignore();
@@ -281,6 +293,10 @@ void MainWindow::restoreWindowFromTray() {
 
 std::string MainWindow::getSearchFilter() {
     return ui_->lineSearch->text().toStdString();
+}
+
+void MainWindow::focusNoteText() {
+    ui_->textContent->setFocus();
 }
 
 void MainWindow::setSearchFilter(const std::string &text) {
