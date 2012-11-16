@@ -16,9 +16,9 @@ namespace note { namespace view {
 
 Ui::MainWindow *MainWindow::sui = 0;
 
-MainWindow::MainWindow(note::common::Presenter &presenter, QWidget *parent) :
-    QMainWindow(parent),
-    presenter_(presenter),
+MainWindow::MainWindow(note::common::Presenter &presenter) :
+    QMainWindow(0),
+    AbstractView(presenter),
     ui_(new Ui::MainWindow),
     tagsStringList_(),
     tagsUiModel_(tagsStringList_),

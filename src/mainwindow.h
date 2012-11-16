@@ -31,7 +31,7 @@ class MainWindow : public QMainWindow, public note::common::AbstractView
     Q_OBJECT
 
 public:
-    explicit MainWindow(note::common::Presenter &presenter, QWidget *parent = 0);
+    explicit MainWindow(note::common::Presenter &presenter);
     ~MainWindow();
 
     virtual void showEvent(QShowEvent *event);  // overwritten
@@ -76,7 +76,6 @@ private:
     NoteDto getSelectedNote();
     void selectNextNote(bool directionDown);
 
-    note::common::Presenter &presenter_;  // dependency - not our ownership
     ::Ui::MainWindow *ui_;    // null at beginning, will be initialized in constructor
 
     QSystemTrayIcon trayIcon;
