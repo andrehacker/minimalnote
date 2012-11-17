@@ -15,10 +15,14 @@ namespace note { namespace common {
 class AbstractView
 {
 public:
+    // Force view-implementation to get a reference to presenter.
+    // View must also call methods on the presenter, but we cannot force this;(
+    AbstractView(Presenter &presenter):presenter_(presenter) {}
+
     // virtual destructor is required because AbstractView is used
     // as a interface class (base class)
-    AbstractView(Presenter &presenter):presenter_(presenter) {}
     virtual ~AbstractView() {}
+
     virtual void showWindow() = 0;
     virtual void setSearchFilter(const std::string &text) = 0;
     virtual std::string getSearchFilter() = 0;

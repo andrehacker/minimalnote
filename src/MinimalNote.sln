@@ -1,7 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "qtnote", "qtnote.vcxproj", "{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinimalNote", "qtnote.vcxproj", "{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "test", "test\test.vcxproj", "{A8F2ABFB-1419-44E0-A02D-A937961DE98A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E} = {26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,6 +18,10 @@ Global
 		{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}.Debug|Win32.Build.0 = Debug|Win32
 		{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}.Release|Win32.ActiveCfg = Release|Win32
 		{26D6EB1F-1EF2-3B79-9168-32BF1AFE541E}.Release|Win32.Build.0 = Release|Win32
+		{A8F2ABFB-1419-44E0-A02D-A937961DE98A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A8F2ABFB-1419-44E0-A02D-A937961DE98A}.Debug|Win32.Build.0 = Debug|Win32
+		{A8F2ABFB-1419-44E0-A02D-A937961DE98A}.Release|Win32.ActiveCfg = Release|Win32
+		{A8F2ABFB-1419-44E0-A02D-A937961DE98A}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
