@@ -27,7 +27,7 @@ public:
     bool fieldIsNull(int index);
     bool fieldIsNull(const std::string &name);
 
-    bool hasNext();
+    bool eof();
     void nextRow();
 
 
@@ -42,7 +42,7 @@ private:
 
     sqlite3 *db_;        // This is a dependency, not our ownership
 
-    bool hasNext_;
+    bool eof_;
     int cols_;
 };
 

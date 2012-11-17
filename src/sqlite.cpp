@@ -88,12 +88,12 @@ std::unique_ptr<SqliteQuery> Sqlite::execQuery(const std::string &sql) {
     int ret = sqlite3_step(preparedStatement);
     if (ret == SQLITE_DONE) {
         qDebug() << "Sqlite::execQuery: Query returned no rows";
-        // query returned no rows, don't call step again => has Next
-        return std::unique_ptr<SqliteQuery>(new SqliteQuery(preparedStatement, false, db_));
+        // query returned no rows, don't call step again => eof=true
+        return std::unique_ptr<SqliteQuery>(new SqliteQuery(preparedStatement, true, db_));
     } else if (ret == SQLITE_ROW) {
         qDebug() << "Sqlite::execQuery: Query returned >=1 rows";
         // >=1 row
-        return std::unique_ptr<SqliteQuery>(new SqliteQuery(preparedStatement, true, db_));
+        return std::unique_ptr<SqliteQuery>(new SqliteQuery(preparedStatement, false, db_));
     } else {
         // any error
         sqlite3_finalize(preparedStatement);

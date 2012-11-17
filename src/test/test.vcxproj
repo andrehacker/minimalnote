@@ -50,7 +50,7 @@
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\QtGuid4.lib;$(QTDIR)\lib\QtCored4.lib;C:\CODE\github\minimalnote\src\Win32\Debug\sqlite.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlite3.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlitequery.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlitetable.obj;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>$(QTDIR)\lib\qtmaind.lib;$(QTDIR)\lib\QtGuid4.lib;$(QTDIR)\lib\QtCored4.lib;C:\CODE\github\minimalnote\src\Win32\Debug\sqlite.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlite3.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlitequery.obj;C:\CODE\github\minimalnote\src\Win32\Debug\sqlitetable.obj;C:\CODE\github\minimalnote\src\Win32\Debug\textfilelogger.obj;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>

@@ -26,7 +26,7 @@ std::vector<TagDto> TagTable::getAll()
     std::vector<TagDto> tags;
     std::unique_ptr<SqliteQuery> query = db_.execQuery("SELECT id, name, notecount FROM tags");
     if (query) {
-        while (query->hasNext()) {
+        while (!query->eof()) {
             tags.push_back(TagDto(
                                 query->getIntField("id"),
                                 query->getStringField("name"),

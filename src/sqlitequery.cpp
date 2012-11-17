@@ -3,10 +3,10 @@
 
 namespace sqliteWrapper {
 
-SqliteQuery::SqliteQuery(sqlite3_stmt *preparedStatement, bool hasNext, sqlite3 *db)
+SqliteQuery::SqliteQuery(sqlite3_stmt *preparedStatement, bool eof, sqlite3 *db)
     : preparedStatement_(preparedStatement),
       db_ (db),
-      hasNext_(hasNext) {
+      eof_(eof) {
     cols_ = sqlite3_column_count(preparedStatement_);
 }
 
@@ -51,8 +51,8 @@ int SqliteQuery::getIntField(const std::string &fieldName, const int nullValue)
     return getIntField(fieldIndex, nullValue);
 }
 
-bool SqliteQuery::hasNext() {
-    return hasNext_;
+bool SqliteQuery::eof() {
+    return eof_;
 }
 
 void SqliteQuery::nextRow() {
@@ -60,7 +60,7 @@ void SqliteQuery::nextRow() {
     int ret = sqlite3_step(preparedStatement_);
 
     if (ret == SQLITE_DONE) {
-        hasNext_ = false;
+        eof_ = true;
     } else if (ret == SQLITE_ROW) {
         // more rows, nothing to do
     } else {

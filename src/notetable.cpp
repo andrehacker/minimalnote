@@ -57,7 +57,7 @@ std::vector<NoteDto> NoteTable::getNotes(const std::string &searchText, const st
     std::vector<NoteDto> notes;
     std::unique_ptr<SqliteQuery> query = db_.execQuery(sql);
     if (query) {
-        while (query->hasNext()) {
+        while (!query->eof()) {
             notes.push_back(NoteDto(
                                 query->getIntField("id"),
                                 query->getStringField("title"),
